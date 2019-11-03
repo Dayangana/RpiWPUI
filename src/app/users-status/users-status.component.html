@@ -1,0 +1,22 @@
+<button class="btn btn-secondary m-3" (click)="ngOnInit()">Refresh</button>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">IP Address</th>
+        <th scope="col">MAC Address</th>
+        <th scope="col">Current Status</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of ipList; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{item.ip}}</td>
+        <td>{{item.mac}}</td>
+        <td>{{item.state}}</td>
+        <td><button class="btn btn-danger">Ban</button></td>
+      </tr>
+      
+    </tbody>
+  </table>

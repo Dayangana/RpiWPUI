@@ -1,0 +1,73 @@
+<h3>IoT Router Status</h3>
+
+<div class="row">
+    <div class="col">
+        <div class="container">
+            <div class="container shadow">
+                <table class="table table-borderless">
+
+                    <tbody>
+                        <tr>
+                            <td>Internet Connection</td>
+                            <td>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1"></label>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Current User</td>
+                            <td>ADMIN</td>
+
+                        </tr>
+                        <tr>
+                            <td>Date/Time</td>
+                            <td>{{date|date:short}}</td>
+                        </tr>
+                        <tr>
+                            <td>IP Address</td>
+                            <td>ip</td>
+                        </tr>
+                        <tr>
+                            <td>DHCP Pool</td>
+                            <td>
+                                <span>On</span><br>
+                                <span>192.168.4.2 - 192.168.4.20</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div><br>
+            <div class="container shadow">
+                <app-view-speed></app-view-speed>
+            </div>
+
+        </div>
+    </div>
+    <div class="col">
+            <div class="container shadow">
+                    <table class="table table-borderless">
+    
+                        <tbody>
+                            <tr>
+                                <td>Name of IoT Device</td>
+                                <td>
+                                    Raspberry pi 3 B+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Operating System</td>
+                                <td>Raspbian Buster 10.1</td>
+                            </tr>
+                            <tr>
+                                <td>Up Time</td>
+                                <td>02:59:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    </div>
+</div>
