@@ -9,7 +9,9 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  active:string = "status"
   ngOnInit() {
   }
+
 
 }
